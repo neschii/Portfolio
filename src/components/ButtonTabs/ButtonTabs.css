@@ -1,0 +1,75 @@
+.button-tabs-container {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  z-index: 10;
+}
+.tab-button {
+  position: relative;
+  width: 70px;
+  height: 55px;
+  border: none;
+  background-image: url('/src/assets/svtabbtn.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 12px;
+  transition: transform 0.1s ease;
+  outline: none;
+}
+.tab-button:hover {
+  transform: scale(1.05);
+}
+.tab-button:active {
+  transform: scale(0.98);
+}
+.tab-text {
+  font-family: var(--font-handdrawn);
+  color: var(--color-lired);
+  font-size: 1.1rem;
+  left: 15%;
+  position: absolute;
+  top: 12%;
+  text-transform: lowercase;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+.img-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 22px;
+  width: 25px;
+  height: 25px;
+  pointer-events: none;
+  user-select: none;
+}
+@media (max-width: 750px) {
+  .button-tabs-container {
+    top: -8%;
+    right: 5px;
+    gap: 6px;
+  }
+  .tab-button {
+    width: 70px;
+    height: 55px;
+    padding-left: 10px;
+  }
+  .tab-text {
+    font-size: 0.9rem;
+  }
+  .img-icon {
+    width: 28px;
+    height: 28px;
+    right: 22px;
+  }
+}

@@ -1,0 +1,32 @@
+.bio-content {
+  width: 100%;
+  left: 2%;
+  position: relative;
+}
+
+.bio-text {
+  color: var(--color-text-dark);
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.bio-text:last-child {
+  margin-bottom: 9px;
+}
+
+@media (max-width: 750px) {
+  .bio-text {
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+  }
+
+  .bio-content {
+    margin-bottom: 1rem;
+  }
+}

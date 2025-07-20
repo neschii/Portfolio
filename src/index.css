@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --color-primary: #8b4513;
+  --color-secondary: #5c3324;
+  --color-background: #C0DDEE;
+  --color-accent: #f8e4a5;
+  --color-card: #ebcda7;
+  --color-sky: #87CEEB;
+  --color-grass: #90EE90;
+  --color-lired: #e1464c;
+  --font-handdrawn: 'Delicious Handrawn', cursive;
+  --font-pixel: 'Press Start 2P', cursive;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-secondary);
+  background-color: var(--color-background);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

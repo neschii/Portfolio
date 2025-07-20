@@ -1,0 +1,99 @@
+.portrait-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  height: 0;
+}
+
+.portrait-border,
+.profile-image {
+  position: absolute;
+  top: -2px;
+  z-index: 1;
+  left: -11px;
+  width: 92%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.portrait-border {
+  z-index: 0;
+  top: 10px;
+  left: -20px;
+  width: 100%;
+  height: 95%;
+}
+
+.profile-image {
+  z-index: 1;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  transition-duration: 5s;
+  cursor: pointer;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 9rem;
+}
+
+.label-item {
+  position: relative;
+}
+
+.label-border {
+  width: 13.3rem;
+  height: 3rem;
+  display: block;
+}
+
+.label-text {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-40%, -50%);
+  font-family: var(--font-pixel);
+  color: var(--color-text-dark);
+  font-size: 0.7rem;
+  white-space: nowrap;
+  text-shadow: 1px 2px #ffffff;
+}
+
+.name-label-container {
+  width: 120px;
+  height: 45px;
+  left: 16.8%;
+}
+
+.role-label-container {
+  width: 120px;
+  height: 45px;
+  left: 16.5%;
+}
+
+@media (max-width: 750px) {
+  .label-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+    margin-top: 0.2rem;
+  }
+
+  .name-label-container {
+    width: 115px;
+    height: 40px;
+  }
+
+  .role-label-container {
+    width: 190px;
+    height: 40px;
+  }
+
+  .label-text {
+    font-size: 0.6rem;
+  }
+}

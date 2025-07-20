@@ -1,0 +1,98 @@
+.clouds-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.cloud {
+  position: absolute;
+}
+
+.cloud-1 {
+  top: 12%;
+  left: -200px;
+  animation: moveCloud1 350s linear infinite;
+  animation-delay: 30s;
+  opacity: 0.7;
+}
+
+.cloud-2 {
+  top: 30%;
+  left: -250px;
+  animation: moveCloud2 280s linear infinite;
+  opacity: 0.8;
+}
+
+.cloud-3 {
+  top: -10%;
+  left: -300px;
+  animation: moveCloud3 450s linear infinite;
+
+}
+
+
+@keyframes moveCloud1 {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(calc(50vw + 200px));
+  }
+}
+
+@keyframes moveCloud2 {
+  from {
+    transform: translateX(-250px);
+  }
+  to {
+    transform: translateX(calc(100vw + 250px));
+  }
+}
+
+@keyframes moveCloud3 {
+  from {
+    transform: translateX(-300px) scale(0.8);
+  }
+  to {
+    transform: translateX(calc(100vw + 300px)) scale(0.8);
+  }
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 750px) {
+  .cloud-img {
+    width: 120px;
+  }
+  
+  .cloud-3 {
+    transform: scale(0.6);
+  }
+  
+  .cloud-4 {
+    transform: scale(0.9);
+  }
+  
+  @keyframes moveCloud3 {
+    from {
+      transform: translateX(-300px) scale(0.6);
+    }
+    to {
+      transform: translateX(calc(100vw + 300px)) scale(0.6);
+    }
+  }
+  
+  @keyframes moveCloud4 {
+    from {
+      transform: translateX(-180px) scale(0.9);
+    }
+    to {
+      transform: translateX(calc(100vw + 180px)) scale(0.9);
+    }
+  }
+}

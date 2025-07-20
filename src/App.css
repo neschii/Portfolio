@@ -1,0 +1,27 @@
+:root {
+  --color-card: linear-gradient(#fae2b7, #f3d8a8, #fcdca5);
+  --color-border: #e3793f;
+  --color-text-dark: #5a2700;
+  --font-pixel: 'Press Start 2P', cursive;
+  --font-handdrawn: 'Delicious Handrawn', cursive;
+}
+
+body {
+  background: linear-gradient(#8bc3f1, #a6d7ff, #c0ddee); ;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+
+.main-content-area {
+  position: relative;
+  width: 100%; 
+  max-width: 750px; 
+  margin: 0 auto; 
+}
