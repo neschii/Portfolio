@@ -9,7 +9,9 @@ type BioType = 'default' | 'more' | 'contact';
 function App() {
   const [activeBio, setActiveBio] = useState<BioType>('default');
 
-  const handleMore = () => setActiveBio('more');
+  const handleMore = () => {
+    setActiveBio((currentBio) => (currentBio === 'more' ? 'default' : 'more'));
+  };
   const handleContact = () => setActiveBio('contact');
   const handleDefault = () => setActiveBio('default');
 
