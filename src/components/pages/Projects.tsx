@@ -2,7 +2,7 @@ import React from 'react';
 import CloudBg from '../CloudBg/CloudBg';
 import Card from '../../ui/Card';
 import projectCardBorder from '../../assets/projectcardborder.png';
-import projects from '../../data/projects';
+import { projects } from '../../data/projects';
 import './Projects.css';
 
 export default function Projects() {

@@ -1,6 +1,6 @@
 import type { Project } from '../interfaces/Project';
 
-const projects: Project[] = [
+export const projects: Project[] = [
   {
     title: 'Chatbot Application',
     description: 'Bot desenvolvido para integração com Twitch, OpenRouter e PandaScore.',
@@ -44,5 +44,3 @@ const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1772232818798-a4b5ff9c13ff?q=80&w=687',
   },
 ];
-
-export default projects;

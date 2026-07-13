@@ -7,7 +7,7 @@ const MoreBio: React.FC = () => (
     </p>
     <p className="bio-text">
       <b>Constant learner, music lover, always curious. </b> <br></br>
-        <b> I hate minimalism. </b>I love a fusion of pastel softness and gothic edge, bold color palettes, loud layouts, and anything that refuses to be boring.
+        I love to explore new technologies frameworks, and languages. I’m always looking for ways to improve my skills and stay up-to-date with the latest trends in web development.
     </p>
   </>
 );
