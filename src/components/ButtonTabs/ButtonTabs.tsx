@@ -7,17 +7,17 @@ import heartImg from '/src/assets/heart.png';
 interface ButtonTabsProps {
   onMore: () => void;
   onContact: () => void;
-  onDefault: () => void;
+  onProjects: () => void;
 }
 
-const ButtonTabs: React.FC<ButtonTabsProps> = ({ onMore, onContact, onDefault }) => {
+const ButtonTabs: React.FC<ButtonTabsProps> = ({ onMore, onContact, onProjects }) => {
   return (
     <div className="button-tabs-container">
       <button className="tab-button" onClick={onMore}>
         <span className="tab-text">‎ ‎ More+</span>
         <img src={heartImg} alt="About" className="img-icon" />
       </button>
-      <button className="tab-button" onClick={onDefault}>
+      <button className="tab-button" onClick={onProjects}>
         <span className="tab-text">projects</span>
         <img src={projImg} alt="Projects" className="img-icon" />
       </button>

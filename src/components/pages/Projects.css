@@ -1,0 +1,104 @@
+.projects-page {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.projects-inner {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-auto-rows: 430px;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.project-card-frame {
+  position: relative;
+  width: 360px;
+  height: 410px;
+  margin: 0 auto;
+  display: grid;
+  align-items: stretch;
+}
+
+.project-card-frame .card-wrapper {
+  height: 100%;
+}
+
+.project-card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.project-card-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.project-card-title {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.project-description {
+  margin: 0;
+  color: var(--color-secondary);
+  line-height: 1.4;
+  text-align: left;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.project-tech-pill {
+  padding: 0.25rem 0.1rem;
+  border-radius: 9px;
+  background-color: var(--color-accent);
+  color: rgb(0, 59, 0);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.project-link {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-card-border {
+  position: absolute;
+  top: -4px;
+  left: -6px;
+  width: 104%;
+  height: 103%;
+  pointer-events: none;
+}
+ 
