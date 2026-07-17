@@ -2,9 +2,9 @@ import type { Project } from '../interfaces/Project';
 
 export const projects: Project[] = [
   {
-    title: 'Chatbot Application',
-    description: 'Bot desenvolvido para integração com Twitch, OpenRouter e PandaScore.',
-    tech: ['React', 'Typescript', 'Node.js', 'API Integration'],
+    title: 'AI Esports Assistant',
+    description: 'AI-powered chatbot that lets users follow live matches, view tournament schedules and results, and check which streamers are currently online.',
+    tech: ['React', 'Typescript', 'Node.js', 'API Integration', 'AI Chatbot'],
     github: 'https://github.com/yourname/chatbot-app',
     image: 'https://images.unsplash.com/photo-1772232818798-a4b5ff9c13ff?q=80&w=687',
   },
@@ -30,17 +30,17 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1772232818798-a4b5ff9c13ff?q=80&w=687',
   },
   {
-    title: 'Blog Platform',
-    description: 'A clean content publishing interface for articles.',
-    tech: ['Next.js', 'JavaScript'],
+    title: 'Cute calculator',
+    description: 'A simple calculator with a cute design.',
+    tech: ['Javascript', 'CSS', 'HTML'],
     github: 'https://github.com/yourname/blog-platform',
-    image: 'https://images.unsplash.com/photo-1772232818798-a4b5ff9c13ff?q=80&w=687',
+    image: 'https://github.com/neschii/vanilla-javascript/raw/6434d1238e785ef1038fc024df7cef971680267d/calculadora/calculator.png',
   },
   {
-    title: 'Chat Dashboard',
-    description: 'A dashboard concept for monitoring conversations and users.',
-    tech: ['React', 'Node.js'],
-    github: 'https://github.com/yourname/chat-dashboard',
-    image: 'https://images.unsplash.com/photo-1772232818798-a4b5ff9c13ff?q=80&w=687',
+    title: 'iPod Nano 4th - Music Player',
+    description: 'A music player inspired by the iPod Nano 4th generation.',
+    tech: ['Javascript', 'CSS', 'HTML'],
+    github: 'https://github.com/neschii/vanilla-javascript/tree/main/music-player',
+    image: 'src/assets/ipodnano.png',
   },
 ];
